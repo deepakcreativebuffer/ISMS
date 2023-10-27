@@ -9,4 +9,34 @@ export const pagesMenu = {
 		text: 'Login',
 		path: '/login',
 	},
+	signUp: {
+		id: 'login',
+		text: 'Signup',
+		path: '/signup',
+	},
+	dashboard: {
+		id: 'dashboard',
+		text: 'Dashboard',
+		path: '/',
+	},
+	insidents: {
+		id: 'Insidents',
+		text: 'Insidents',
+		path: '/insidents',
+	},
+}
+
+
+
+
+
+export const pageLayoutTypesPagesMenu ={
+
+
+	blank: {
+		id: 'blank',
+		text: 'Blank',
+		path: 'page-layouts/blank',
+		icon: 'check_box_outline_blank ',
+	},
 }
