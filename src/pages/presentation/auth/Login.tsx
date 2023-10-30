@@ -188,13 +188,36 @@ const Login: FC<ILoginProps> = ({ isSignUp }) => {
                       />
                     </FormControl>
                   </FormGroup>
+                  <div>
+<div className="d-flex align-items-start justify-content-start me-3 mt-2">
+<FormGroup>
+                    <FormControl>    
+
+                      <Input
+                        id="checkbox"
+                        type="checkbox"
+                        aria-describedby="my-helper-text"
+                        autoComplete="current-password"
+                        value={formik.values.password}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        onFocus={() => {
+                          formik.setErrors({});
+                        }}
+                      />
+                    </FormControl>
+                  </FormGroup>
+                  <div className="mx-1 pt-1 ">Remember me</div>
+</div>
+                  
                   <div 
                     className="cursor-pointer d-flex align-items-end justify-content-end me-3 mt-2 "
                     // onClick={() => setIsOpen(true)}
                     // onKeyDown={() => setIsOpen(true)}
                     aria-hidden="true"
                   >
-                    Forget Password
+                    Forget Password ?
+                  </div>
                   </div>
                 </div>
                 <div className="col-12 btn">
